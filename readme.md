@@ -12,7 +12,13 @@ controllers new:
   |- Inject `#include "{NAME}Controller.hpp"` to src/controllers/Controllers.hpp
   |- Inject `std::make_shared<Controllers::{NAME}Controller>(),` to src/controllers/Controllers.hpp
   |- Inject `src/controllers/<%= name %>Controller.hpp` to add_library() in CMakeLists.txt
- So it's creates controller with default template and injects paths and pointers to it in Controllers.hpp and adds a path in CMakeLists.txt.
+ So it's creates controller with default template and injects paths and pointers to it in Controllers.hpp and adds a path to CMakeLists.txt.
+
+dto new:
+  - {NAME}DTO.hpp
+  |- Inject `#include "{NAME}DTO.hpp"` to src/dto/DTOs.hpp
+  |- Inject `src/dto/<%= name %>DTO.hpp` to add_library() in CMakeLists.txt
+ Creates DTO with default template and includes it in DTOs.hpp and adds a path to CMakeLists.txt.
 ```
 
 ## By the way...
