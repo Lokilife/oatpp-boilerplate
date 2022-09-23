@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.1)
 
-set(project_name oatpp-boilerplate) ## rename your project here
+set(project_name oatend) ## rename your project here
 
 project(${project_name})
 
@@ -12,6 +12,7 @@ add_library(${project_name}-lib
     src/controllers/AppController.hpp
     src/controllers/Controllers.hpp
     src/dto/DTOs.hpp
+    src/dto/HelloDTO.hpp
 )
 
 ## link libs

@@ -30,7 +30,7 @@ namespace Controllers
     public:
         ENDPOINT("GET", "/hello", root)
         {
-            auto dto = MessageDto::createShared();
+            auto dto = DTOs::MessageDto::createShared();
             dto->statusCode = 200;
             dto->message = "Hello World!";
             return createDtoResponse(Status::CODE_200, dto);
